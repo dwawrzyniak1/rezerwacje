@@ -1,0 +1,21 @@
+.offer-item{
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.offer-item > img{
+    height: 300px;
+    width: 300px;
+}
+
+.offer-item-description{
+    flex-grow: 2;
+    margin-left: 10px;
+}
+
+.offer-item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
