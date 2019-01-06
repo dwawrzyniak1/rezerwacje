@@ -1,0 +1,73 @@
+.offer-item{
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.offer-item > img{
+    height: 300px;
+    width: 300px;
+}
+
+.offer-item-description{
+    flex-grow: 2;
+    margin-left: 10px;
+}
+
+.offer-item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offer-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    padding: 2em;
+}
+
+.offer-content{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto 1fr 150px;
+}
+
+.offer-image{
+    height: 450px;
+    width: 450px;
+}
+
+.offer-center{
+    padding: 1.2em;
+}
+
+.offer-select-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 60%;
+}
+
+.offer-select-input > label{
+    width: 30%;
+}
+
+.offer-select-input > span{
+    width: 30%;
+    text-align: end;
+}
+
+#accomodation, #transport, #amount-of-people{
+    width: 200px;
+}
+
+.offer-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
