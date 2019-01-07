@@ -1,11 +1,10 @@
 .offer-item{
     display: flex;
     justify-content: space-around;
-    height: 350px;
 }
 
 .offer-item > img{
-    height: 300px;
+    height: 200px;
     width: 300px;
 }
 

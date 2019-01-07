@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konto | Historia rezerwacji</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<header>
+    <!-- górne menu generowane przez JS -->
+</header>
+
+<main>
+    <div class="container">
+        <!-- navbar dla sortowania ofert względem kierunku / destynacji generowany przez JS -->
+
+        <!-- tytuł zakłądki -->
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h2>Historia rezerwacji</h2>
+                <h4>Aktywne</h4>
+                <!-- tutaj sekwencja ofert -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <!-- mock jednej oferty - todo pobieranie tego z bazy i wrzucanie thymeleaf -->
+                        <div class="offer-item">
+                            <img src="../images/porto.jpg" alt="#"/>
+                            <div class="offer-item-description">
+                                <h2>Porto</h2>
+                                <p>Hotel:   Hi Hostel Porto R. de Paulo da Gama 551, 4169-006 Porto, Portugalia</p>
+                                <p>Data:    od 31.12.2018 r.  do 2.01.2019 r.</p>
+                            </div>
+                            <div class="offer-item-info">
+                                <a href="offer.html" class="btn btn-primary">Pokaż szczegóły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="offer-item">
+                            <img src="../images/budapeszt.jpg" alt="#"/>
+                            <div class="offer-item-description">
+                                <h2>Budapeszt</h2>
+                                <p>Hotel:   Rubin Wellness & Conference Hotel, Dayka Gábor u. 3, 1118 Budapeszt, Węgry</p>
+                                <p>Data:    od 10.12.2018 r.  do 16.12.2018 r.</p>
+                            </div>
+                            <div class="offer-item-info">
+                                <a href="#" class="btn btn-primary">Pokaż szczegóły</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4>Nieaktywne</h4>
+                <p class="text-muted">Brak rezerwacji w tej sekcji.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <!-- nie ma specyfikacji w mockach -->
+</footer>
+
+<!-- initialize constant components like menu -->
+<script src="../scripts/plainNavbar.js"></script>
+</body>
+</html>
