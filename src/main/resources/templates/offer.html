@@ -11,101 +11,111 @@
     </header>
     <main>
 
-        <div class="content">
-            <div class="offer-header">
-                <h2>Porto(Portugalia)</h2>
-                <div>
-                    <span class="badge badge-success">Dostępna</span>
-                    <a href="home.html" class="btn btn-primary">Cofnij</a>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="offer-header col-md-12">
+                    <h2>Porto(Portugalia)</h2>
+                    <div>
+                        <span class="badge badge-success">Dostępna</span>
+                        <a href="home.html" class="btn btn-primary">Cofnij</a>
+                    </div>
                 </div>
-            </div>
+
+                <hr>
+
+                <div class="offer-content col-md-12">
+
+                    <div>
+                        <img src="../images/porto.jpg" alt="#" class="offer-image"/>
+
+                        <div class="offer-date">
+                            <label for="start-date">
+                                Wyjazd
+                            </label>
+                            <input type="date" name="start-date" id="start-date">
+
+                            <label for="end-date">
+                                Powrót
+                            </label>
+                            <input type="date" name="end-date" id="end-date">
+                        </div>
+                    </div>
+
+                    <div class="offer-center">
+
+                        <div class="offer-select-input">
+                            <label for="accomodation">
+                                Wybierz hotel:
+                            </label>
+                            <select name="accomodation" id="accomodation">
+                                <option>
+                                    Przykładowy hotel
+                                </option>
+                            </select>
+                            <span>
+                                300 zł
+                            </span>
+                        </div>
+
+                        <div class="offer-select-input">
+                            <label for="transport">
+                                Wybierz transport
+                            </label>
+                            <select name="transport" id="transport">
+                                <option>
+                                    Przykładowy transport
+                                </option>
+                            </select>
+                            <span>
+                                300 zł
+                            </span>
+                        </div>
+
+                        <div class="offer-select-input">
+                            <label for="amount-of-people">
+                                Liczba osób
+                            </label>
+                            <input type="range" name="amount-of-people-input" id="amount-of-people" value="1" min="1" max="10"/>
+                            <span id="amount-of-people-output">1</span>
+                        </div>
+
+                        <p class="offer-description">
+                            OPIS OFERTY
+                        </p>
+
+                    </div>
+
+                    <div class="offer-summary">
+
+                        <div class="price-wrapper">
+                            <label>
+                                Cena ogółem
+                            </label>
+                            <output name="total-price">
+                                600 zł
+                            </output>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Zarezerwuj
+                        </button>
+
+                    </div>
+
+                </div> <!-- offer-content -->
+
+            </div> <!-- row -->
+
             <hr>
-            <div class="offer-content">
 
-                <div>
-                    <img src="../images/porto.jpg" alt="#" class="offer-image"/>
-
-                    <div class="offer-date">
-                        <label for="start-date">
-                            Wyjazd
-                        </label>
-                        <input type="date" name="start-date" id="start-date">
-
-                        <label for="end-date">
-                            Powrót
-                        </label>
-                        <input type="date" name="end-date" id="end-date">
-                    </div>
-                </div>
-
-                <div class="offer-center">
-
-                    <div class="offer-select-input">
-                        <label for="accomodation">
-                            Wybierz hotel:
-                        </label>
-                        <select name="accomodation" id="accomodation">
-                            <option>
-                                Przykładowy hotel
-                            </option>
-                        </select>
-                        <span>
-                            300 zł
-                        </span>
-                    </div>
-
-                    <div class="offer-select-input">
-                        <label for="transport">
-                            Wybierz transport
-                        </label>
-                        <select name="transport" id="transport">
-                            <option>
-                                Przykładowy transport
-                            </option>
-                        </select>
-                        <span>
-                            300 zł
-                        </span>
-                    </div>
-
-                    <div class="offer-select-input">
-                        <label for="amount-of-people">
-                            Liczba osób
-                        </label>
-                        <input type="range" name="amount-of-people-input" id="amount-of-people" value="1" min="1" max="10"/>
-                        <span id="amount-of-people-output">1</span>
-                    </div>
-
-                    <p class="offer-description">
-                        OPIS OFERTY
-                    </p>
-
-                </div>
-
-                <div class="offer-summary">
-
-                    <div class="price-wrapper">
-                        <label>
-                            Cena ogółem
-                        </label>
-                        <output name="total-price">
-                            600 zł
-                        </output>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">
-                        Zarezerwuj
-                    </button>
-
-                </div>
-
-            </div>
-            <hr>
-        </div>
+        </div> <!-- container-->
 
     </main>
     <!-- initialize constant components like menu -->
     <script src="../scripts/index.js"></script>
     <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/offer.js"></script>
 </body>
 </html>

@@ -48,7 +48,6 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 60%;
 }
 
 .offer-select-input > label{
