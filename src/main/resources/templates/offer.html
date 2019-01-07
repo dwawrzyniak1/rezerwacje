@@ -4,118 +4,167 @@
     <meta charset="UTF-8">
     <title>Szczegóły oferty</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- menu imported by JS -->
-    </header>
-    <main>
+<header>
+    <!-- menu imported by JS -->
+</header>
+<main>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row">
+        <div class="row">
 
-                <div class="offer-header col-md-12">
-                    <h2>Porto(Portugalia)</h2>
-                    <div>
-                        <span class="badge badge-success">Dostępna</span>
-                        <a href="home.html" class="btn btn-primary">Cofnij</a>
-                    </div>
+            <div class="offer-header col-md-12">
+                <h2>Porto(Portugalia)</h2>
+                <div>
+                    <span class="badge badge-success">Dostępna</span>
+                    <a href="home.html" class="btn btn-primary">Cofnij</a>
                 </div>
-
-                <hr>
-
-                <div class="offer-content col-md-12">
-
-                    <div>
-                        <img src="../images/porto.jpg" alt="#" class="offer-image"/>
-
-                        <div class="offer-date">
-                            <label for="start-date">
-                                Wyjazd
-                            </label>
-                            <input type="date" name="start-date" id="start-date">
-
-                            <label for="end-date">
-                                Powrót
-                            </label>
-                            <input type="date" name="end-date" id="end-date">
-                        </div>
-                    </div>
-
-                    <div class="offer-center">
-
-                        <div class="offer-select-input">
-                            <label for="accomodation">
-                                Wybierz hotel:
-                            </label>
-                            <select name="accomodation" id="accomodation">
-                                <option>
-                                    Przykładowy hotel
-                                </option>
-                            </select>
-                            <span>
-                                300 zł
-                            </span>
-                        </div>
-
-                        <div class="offer-select-input">
-                            <label for="transport">
-                                Wybierz transport
-                            </label>
-                            <select name="transport" id="transport">
-                                <option>
-                                    Przykładowy transport
-                                </option>
-                            </select>
-                            <span>
-                                300 zł
-                            </span>
-                        </div>
-
-                        <div class="offer-select-input">
-                            <label for="amount-of-people">
-                                Liczba osób
-                            </label>
-                            <input type="range" name="amount-of-people-input" id="amount-of-people" value="1" min="1" max="10"/>
-                            <span id="amount-of-people-output">1</span>
-                        </div>
-
-                        <p class="offer-description">
-                            OPIS OFERTY
-                        </p>
-
-                    </div>
-
-                    <div class="offer-summary">
-
-                        <div class="price-wrapper">
-                            <label>
-                                Cena ogółem
-                            </label>
-                            <output name="total-price">
-                                600 zł
-                            </output>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">
-                            Zarezerwuj
-                        </button>
-
-                    </div>
-
-                </div> <!-- offer-content -->
-
-            </div> <!-- row -->
+            </div>
 
             <hr>
 
-        </div> <!-- container-->
+            <div class="offer-content col-md-12">
 
-    </main>
-    <!-- initialize constant components like menu -->
-    <script src="../scripts/index.js"></script>
-    <script src="../scripts/navbar.js"></script>
-    <script src="../scripts/offer.js"></script>
+                <div>
+                    <img src="../images/porto.jpg" alt="#" class="offer-image"/>
+
+                    <div class="offer-date">
+                        <label for="start-date">
+                            Wyjazd
+                        </label>
+                        <input type="date" name="start-date" id="start-date" class="form-control" value="2019-01-07">
+
+                        <label for="end-date">
+                            Powrót
+                        </label>
+                        <input type="date" name="end-date" id="end-date" class="form-control" value="2019-01-08">
+                    </div>
+                </div>
+
+                <div class="offer-center">
+
+                    <div class="offer-select-input">
+                        <label for="accomodation">
+                            Wybierz hotel:
+                        </label>
+                        <select name="accomodation" id="accomodation" class="form-control">
+                            <option>
+                                Przykładowy hotel
+                            </option>
+                        </select>
+                        <span id="accomodation-price">
+                            300 zł
+                        </span>
+                    </div>
+
+                    <div class="offer-select-input">
+                        <label for="transport">
+                            Wybierz transport
+                        </label>
+                        <select name="transport" id="transport" class="form-control">
+                            <option>
+                                Przykładowy transport
+                            </option>
+                        </select>
+                        <span id="transport-price">
+                            300 zł
+                        </span>
+                    </div>
+
+                    <div class="offer-select-input">
+                        <label for="amount-of-people">
+                            Liczba osób
+                        </label>
+                        <input type="range" name="amount-of-people-input" id="amount-of-people" class="custom-range"
+                               value="1" min="1" max="10"/>
+                        <span id="amount-of-people-output">1</span>
+                    </div>
+
+                    <p class="offer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius, enim in sollicitudin
+                        venenatis, justo lorem interdum mi, in sagittis nulla sapien sit amet dui. Quisque ex ex,
+                        rhoncus sed lectus eu, mollis egestas erat. Curabitur imperdiet arcu in scelerisque molestie.
+                        Praesent felis purus, aliquam a ipsum nec, ultricies venenatis lorem. Suspendisse sodales et
+                        odio ac lobortis. Ut posuere, nunc sit amet tristique pretium, nisl est fermentum nisi, vel
+                        interdum tortor justo a lectus. In commodo a nisl euismod ultricies. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Duis interdum nibh id dui maximus finibus sed sed mauris. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque
+                        pharetra, nunc eget mollis rutrum, turpis purus efficitur massa, eget facilisis nibh nunc
+                        hendrerit tortor. Proin tincidunt tempor ex, sit amet sodales nulla vulputate nec.
+
+                        Aenean et libero sodales neque commodo elementum. Sed nec purus ac diam sodales fermentum eget
+                        ac dui. Suspendisse potenti. Pellentesque vel ultricies lorem. Integer vitae porttitor ligula.
+                        Quisque a tincidunt diam, nec aliquet lectus. Sed feugiat et tellus sed pretium. Fusce pretium
+                        elementum magna id pulvinar. Nam dictum dictum massa ac consequat. Curabitur quis metus nec diam
+                        ullamcorper laoreet. Vestibulum justo ipsum, porta aliquam tellus at, ullamcorper consectetur
+                        dui. Mauris tortor ligula, interdum non mattis a, blandit vitae nibh. Etiam congue massa at
+                        fermentum suscipit.
+                    </p>
+
+                </div>
+
+                <div class="offer-summary">
+
+                    <div class="price-wrapper">
+                        <label>
+                            Cena ogółem
+                        </label>
+                        <output name="total-price" id="total-price">
+                            600 zł
+                        </output>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#submit-reservation">
+                        Zarezerwuj
+                    </button>
+
+                </div>
+
+            </div> <!-- offer-content -->
+
+        </div> <!-- row -->
+
+        <hr>
+
+    </div> <!-- container-->
+
+</main>
+
+<!-- modals -->
+
+<div class="modal fade" id="submit-reservation" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Czy na pewno chcesz dokonać rezerwacji?</h5>
+            </div>
+            <div class="modal-content">
+                <p>
+                    Wszystkie niezbędne dane zostaną wysłane na adres email
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Wróć</button>
+                <button type="button" class="btn btn-primary" id="cancel-reservation">Rezerwuj</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- initialize constant components like menu -->
+<!--<script src="../scripts/index.js"></script>-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="../scripts/navbar.js"></script>
+<script src="../scripts/offer.js"></script>
+<script src="../scripts/fillData.js"></script>
 </body>
 </html>

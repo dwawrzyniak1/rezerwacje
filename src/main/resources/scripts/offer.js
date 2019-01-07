@@ -1,6 +1,6 @@
 function init() {
     let range = document.getElementById("amount-of-people");
-    range.addEventListener("change", updateAmountOfPeople);
+    range.addEventListener("input", updateAmountOfPeople);
 }
 
 function updateAmountOfPeople() {

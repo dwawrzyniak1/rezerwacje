@@ -1,3 +1,11 @@
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#logo{
+    background-color: #5d1980;
+}
+
 .offer-item{
     display: flex;
     justify-content: space-around;
@@ -11,6 +19,7 @@
 .offer-item-description{
     flex-grow: 2;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .offer-item-info{
@@ -20,9 +29,12 @@
 }
 
 .offer-header{
+    margin-top: 2em;
+    margin-bottom: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
 }
 
 .content{
@@ -44,7 +56,14 @@
     padding: 1.2em;
 }
 
+.offer-date{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
 .offer-select-input{
+    height: 3em;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -68,4 +87,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.modal-content{
+    align-items: center;
 }
